@@ -2,7 +2,7 @@ const mongoose = require("mongoose"
 );
 const Schema = mongoose.Schema;
 
-const exerciseSchema = new Schema 
+const workoutSchema = new Schema 
 ({
 name: {
     type: String,
@@ -32,6 +32,6 @@ distance: {
     },
 });
 
-const Exercise = mongoose.model.apply("Exercise", exerciseSchema);
+const Workout = mongoose.model.apply("Workout", workoutSchema);
 
-module.expores = Exercise;
+module.expores = Workout;
